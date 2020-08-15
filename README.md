@@ -121,6 +121,18 @@ mkdir -p /db/data
 mongod
 ```
 
+If the mongo shell not work, stop mondoDB
+
+```javascript
+brew services stop mongodb
+```
+
+And then run.
+
+```javscript
+ mongod
+```
+
 After the mongo shell opens:
 
 ```javscript
@@ -134,6 +146,7 @@ The above command will create a database named todos.
 Let us first create a file called `server.js` inside the server folder.
 
 ```javascript
+cd server/
 touch server.js
 ```
 
@@ -196,6 +209,8 @@ To run the server:
 ```javascript
 nodemon server.js
 ```
+
+in the sever folder
 
 <br />
 
