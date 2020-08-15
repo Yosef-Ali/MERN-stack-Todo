@@ -388,40 +388,40 @@ We can test the API's using Postman with this we finish the backend implementati
 
 ## Basic Commands of MongoDB
 
-`1. Mongo:` This is one of the most common commands used in MongoDB. When used, you are asking the platform to connect to localhost on default port 27017.
+**1. Mongo:** This is one of the most common commands used in MongoDB. When used, you are asking the platform to connect to localhost on default port 27017.
 
-`2. Mongo <host>/<database>:` This command is used when you want the platform to connect to a particular database. An example of this command in action can be, mongo 10.121.65.58/mydb.
+**2. Mongo <host>/<database>:** This command is used when you want the platform to connect to a particular database. An example of this command in action can be, mongo 10.121.65.58/mydb.
 
-`3. use <database name>:` If at any point in time, you need to switch between existing databases, use this command. Example, use mydb.
+**3. use <database name>:** If at any point in time, you need to switch between existing databases, use this command. Example, use mydb.
 
-`4. Db:` If you need to view the current database you are using, make use of this command.
+**4. Db:** If you need to view the current database you are using, make use of this command.
 
-`5. show collections:` If you need to view all the collections in the current database, then make use of this command. Example: show collections.
+**5. show collections:** If you need to view all the collections in the current database, then make use of this command. Example: show collections.
 
-`6. show dbs:` In the midst of programming, if you need to view the current database being used then use this command. Example: show dbs.
+**6. show dbs:** In the midst of programming, if you need to view the current database being used then use this command. Example: show dbs.
 
-`7. db.collection.insertMany([ <document1>, <document2>, … ]):` If you need to insert multiple documents within an already existing collection.
+**7. db.collection.insertMany([ <document1>, <document2>, … ]):** If you need to insert multiple documents within an already existing collection.
 
-`8. db.collection.insert( <document> ):` If you need to insert a single new document into an already existing collection.
+**8. db.collection.insert( <document> ):** If you need to insert a single new document into an already existing collection.
 db.collection.find(<query>): If you need to find a specific document within a collection by using a field value condition, then use this command. Example, db.books.find({“title”:”Treasure Island”}).
 
-`9. db.collection.find():` If you need to find all the documents in an already existing collection, then make use of this command. Example, db.books.find().
+**9. db.collection.find():** If you need to find all the documents in an already existing collection, then make use of this command. Example, db.books.find().
 
-`10. db.collection.findOne(<query>, <projection>):` If you need to find the first document that matches the query you have given, then make use of this command. Example: db.books.findOne({}, {\_id:false}).
+**10. db.collection.findOne(<query>, <projection>):** If you need to find the first document that matches the query you have given, then make use of this command. Example: db.books.findOne({}, {\_id:false}).
 
-`11. db.collection.find(<query>, <projection>):` If you need to find some specific fields of a document in a collection, then you can make use of this command. Example: db.books.find({“title”:”Treasure Island”}, {title:true, category:true, \_id:false}).
+**11. db.collection.find(<query>, <projection>):** If you need to find some specific fields of a document in a collection, then you can make use of this command. Example: db.books.find({“title”:”Treasure Island”}, {title:true, category:true, \_id:false}).
 
-`12. db.collection.update(<query>, <update>):` If you need to remove certain in an existing document, by matching a query then you can make use of this command. Example: db.books.update({title : “Treasure Island”}, {\$unset : {category:””}}).
+**12. db.collection.update(<query>, <update>):** If you need to remove certain in an existing document, by matching a query then you can make use of this command. Example: db.books.update({title : “Treasure Island”}, {\$unset : {category:””}}).
 
-`13. db.collection.update(<query>, <update> ):` If you need to update some specific fields of a document that match the given query, then make use of this command. Example: db.books.update({title : “Treasure Island”}, {\$set : {category :”Adventure Fiction”}}).
+**13. db.collection.update(<query>, <update> ):** If you need to update some specific fields of a document that match the given query, then make use of this command. Example: db.books.update({title : “Treasure Island”}, {\$set : {category :”Adventure Fiction”}}).
 
-`14. db.collection.remove(<query>,` {justOne:true}): If in a certain situation, you need to delete a single document that matches your query then use this command. Example: db.books.remove({title :”Treasure Island”}, {justOne:true}).
+**14. db.collection.remove(<query>,** {justOne:true}): If in a certain situation, you need to delete a single document that matches your query then use this command. Example: db.books.remove({title :”Treasure Island”}, {justOne:true}).
 
-`15. db.collection.update(<query>, <update>,` {multi:true} ): If you need to delete certain fields of all the documents that match your query, then use this command. Example: db.books.update({category : “Fiction”}, {\$unset : {category:””}}, {multi:true}).
+**15. db.collection.update(<query>, <update>,** {multi:true} ): If you need to delete certain fields of all the documents that match your query, then use this command. Example: db.books.update({category : “Fiction”}, {\$unset : {category:””}}, {multi:true}).
 
-`16. db.collection.remove({}):` If you need to delete all the documents in a collection, irrespective if they match your query or not, then use this command. Example: db.books.remove({}).
+**16. db.collection.remove({}):** If you need to delete all the documents in a collection, irrespective if they match your query or not, then use this command. Example: db.books.remove({}).
 
-`17. db.collection.remove(<query>):` If you need to delete all the documents that match a certain query, then make use of this command. Example: db.books.remove({“category” :”Fiction”}).
+**17. db.collection.remove(<query>):** If you need to delete all the documents that match a certain query, then make use of this command. Example: db.books.remove({“category” :”Fiction”}).
 
 ## Client side
 
