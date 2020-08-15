@@ -97,6 +97,13 @@ With the package.json file available in the server directory, we are ready to ad
 npm install express body-parser cors mongoose
 ```
 
+Let us have an idea about what each of the above package does:
+
+**`. Express:`** Express is a light weighted web framework of Node.js. This acts as our main server and has many compatible middleware to perform almost any kind of function in web development. <br />
+**`. body-parser:`** It is a middleware used to parse the posted data from the client side.<br>
+**`. cors:`** Cross-origin resource sharing (CORS) is a mechanism that allows restricted resources on a web page to be requested from another domain outside the domain from which the first resource was served. And cors is the Node.js package which performs the above function for us.<br>
+**`. mongoose:`** mongoose is an object modelling tool for MongoDB. It helps us access MongoDB in an object oriented way.
+
 Then, we must also install a package called nodemon.
 
 ```javascript
@@ -318,9 +325,9 @@ getTodos = async (req, res) => {
 module.exports = { createItem, getTodos }
 ```
 
-The todo-ctrl.js file has the code for main implementation of adding a todo item and returning all the todo items.
+The `todo-ctrl.js` file has the code for main implementation of adding a todo item and returning all the todo items.
 
-Inside the todo-router.js, we define the method of handling the request using the statement
+Inside the `todo-router.js`, we define the method of handling the request using the statement
 
 ```javascript
 router.post('/', todoCtrl.createItem)
