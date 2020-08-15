@@ -69,7 +69,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 =============================================
 
-## `MERN stack TODO`
+## MERN stack TODO
 
 ### FullStack react web application <br />
 
